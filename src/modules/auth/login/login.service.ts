@@ -17,7 +17,7 @@ export class LoginService {
              if(loginDto.password==user.password){
                  return "login suceessfully";
              }else{
-                 return "incorrect password";
+                 return "incorrect password"
              }
         } catch (error) {
             throw new BadRequestException('Your login information was incorrect. Please check and try again.');

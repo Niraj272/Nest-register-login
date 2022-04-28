@@ -9,4 +9,4 @@ export class LoginRequestDto{
     @MaxLength(24)
     @IsNotEmpty()
     readonly password: string;    
-}
+}       

@@ -7,7 +7,6 @@ import { Course } from './courses.entity';
 export class CoursesService {
 
     constructor(@Inject(COURSE_REPOSITORY) private readonly courseRepository: typeof Course) { }
-    
     async getAll(){
         return await this.courseRepository.findAll();
     }

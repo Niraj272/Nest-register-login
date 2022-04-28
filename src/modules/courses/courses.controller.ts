@@ -6,7 +6,7 @@ import {CourseDto} from './course.dto'
 export class CoursesController {
     constructor(private CoursesService:CoursesService ){}
     
-    @Get()
+    @Get()  
     async getAll(){
       const getdata = await this.CoursesService.getAll();
       return getdata;
