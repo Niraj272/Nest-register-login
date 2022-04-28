@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize-typescript';
-import { Course } from 'src/courses/courses.entity';
+import { Course } from '../../modules/courses/courses.entity';
 import { SEQUELIZE, DEVELOPMENT, TEST, PRODUCTION } from '../constants';
 import { databaseConfig } from './database.config';
 

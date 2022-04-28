@@ -1,12 +1,13 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { COURSE_REPOSITORY } from 'src/core/constants';
 import { CourseDto } from './course.dto';
+import { COURSE_REPOSITORY } from '../../core/constants';
 import { Course } from './courses.entity';
 
 @Injectable()
 export class CoursesService {
 
     constructor(@Inject(COURSE_REPOSITORY) private readonly courseRepository: typeof Course) { }
+    
     async getAll(){
         return await this.courseRepository.findAll();
     }
