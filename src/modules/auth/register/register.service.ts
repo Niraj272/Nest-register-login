@@ -22,14 +22,14 @@ export class RegisterService {
         }
         
        try {
-        const salt = await bcrypt.genSalt();
+        const salt = 10;
         const hashedPassword = await bcrypt.hash(password,salt);
 
           const newUser =  await this.courseRepository.create({
             name:requestDto.name,
             email:requestDto.email,
             password:hashedPassword,
-            gender:requestDto.gender,
+            gender:requestDto.gender, 
           });
         
             return newUser;
