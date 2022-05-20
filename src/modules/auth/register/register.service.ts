@@ -3,7 +3,6 @@ import { COURSE_REPOSITORY } from '../../../core/constants';
 import { Course } from '../../courses/courses.entity';
 import {RegisterRequestDto} from './dto/register.request.dto'
 import * as bcrypt from 'bcrypt';
-import { retry } from 'rxjs';
 
 @Injectable()
 export class RegisterService {
