@@ -18,4 +18,5 @@ export class RegisterRequestDto {
     @IsNotEmpty()
     @IsString()
     readonly gender: string;
+
 }

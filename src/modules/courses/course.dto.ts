@@ -3,4 +3,5 @@ export class CourseDto {
     readonly email: string;
     readonly password: string;
     readonly gender: string;
+    
 } 

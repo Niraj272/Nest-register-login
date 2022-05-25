@@ -6,3 +6,4 @@ export const DEVELOPMENT = 'development';
 export const TEST = 'test';
 export const PRODUCTION = 'production';
 export const COURSE_REPOSITORY = 'COURSE_REPOSITORY';
+export const USER_REPOSITORY = 'USER_REPOSITORY';
